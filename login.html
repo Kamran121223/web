@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/loginStyle.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="seo.html">Seo-Strategy</a></li>
+                <li><a href="live.html">Live Chat</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="color-overlay" ></div>
+    <!--Login Form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please sign in</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" action="login.php" method="post">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Username" name="username" type="text" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
+                            </fieldset>
+                        </form>
+                        <!--Create a link to register if not signed in html-->
+                        <a href="register.html">Not Signed In??</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Login Form-->
+        <!--Footer-->
+        <footer>
+            <div class="footer">
+                <p>Copyright &copy; 2022</p>
+            </div>
+        </footer>
+</body>
+</html>

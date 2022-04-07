@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="../CSS/blogStyle.css">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li class="active"><a href="blog.html">Blog</a></li>
+                <li><a href="seo.html">Seo-Strategy</a></li>
+                <li><a href="live.html">Live Chat</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--End of Navigation-->
+    <!--Blog-->
+    <h2 class="resth2">Blog</h2>
+    <!--Create a place to write Blog-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="blogh2">Blog</h2>
+                <p class="blogp">
+                    This is a basic page that will be used to test the functionality of the website.
+                </p>
+                <p class="blogp">
+                    I was willing to create a website and this was my chance to learn how to create a website.
+                </p>
+                <p class="blogp">
+                    And do my best.
+                </p>
+                <p class="blogp">
+                    Hope you enjoy this website.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2 class="blogh2">About Me</h2>
+                <p class="blogp">
+                    I am a computer science student of City Montessori School.
+                </p>
+                <p class="blogp">
+                    My Name is <b>S</b>yed <b>K</b>anmran <b>M</b>ehdi.
+                </p>
+                <p class="blogp">
+                    I am a student of the computer science department.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--End of Blog-->
+    <!--blog-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="blog-main">
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">
+                            <a href="#">
+                                <?php echo $title; ?>
+                            </a>
+                        </h2>
+                        <p class="blog-post-meta">
+                            <?php echo $date; ?>
+                            <a href="#">
+                                <?php echo $author; ?>
+                            </a>
+                        </p>
+                        <p>
+                            <?php echo $content; ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-sidebar">
+                    <div class="sidebar-module sidebar-module-inset">
+                        <h4>About</h4>
+                        <p>
+                            <?php echo $about; ?>
+                        </p>
+                    </div>
+                    <div class="sidebar-module">
+                        <h4>Archives</h4>
+                        <ol class="list-unstyled">
+                            <li>
+                                <a href="#">March 2014</a>
+                            </li>
+                            <li>
+                                <a href="#">February 2014</a>
+                            </li>
+                            <li>
+                                <a href="#">January 2014</a>
+                            </li>
+                            <li>
+                                <a href="#">December 2013</a>
+                            </li>
+                            <li>
+                                <a href="#">November 2013</a>
+                            </li>
+                            <li>
+                                <a href="#">October 2013</a>
+                            </li>
+                            <li>
+                                <a href="#">September 2013</a>
+                            </li>
+                            <li>
+                                <a href="#">August 2013</a>
+                            </li>
+                            <li>
+                                <a href="#">July 2013</a>
+                            </li>
+                            <li>
+                                <a href="#">June 2013</a>
+                            </li>
+                            <li>
+                                <a href="#">May 2013</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="sidebar-module">
+                        <h4>Elsewhere</h4>
+                        <ol class="list-unstyled">
+                            <li>
+                                <a href="#">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="#">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Blog-->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">
+                <?php echo $footer; ?>
+            </p>
+        </div>
+    </footer>
+    <!--End of Footer-->
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

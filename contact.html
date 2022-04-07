@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="../CSS/contStyle.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li class="active"><a href="contact.html">contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="seo.html">Seo-Strategy</a></li>
+                <li><a href="live.html">Live Chat</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--End of Navigation-->
+    <!--Contact-->
+<h2 class="resth2">Contact</h2>
+<p>
+    <b>Email:</b> <a href="mailto:
+    <?php
+    echo $email;
+    ?>
+    ">
+    <?php
+    echo $email;
+    ?>
+    leoninja9906@gmail.com
+    </a>
+</p>
+<p>
+    <b>Phone:</b> 
+    <a href="callto:
+    <?php 
+    echo $phone; 
+    ?>
+    ">
+    <?php
+     echo $phone; 
+     ?>
+     +91-9540022006
+    </a>
+ 
+</p>
+<p>
+    <b>Address:</b> <?php echo $address; ?>
+    City Montessori School,
+    <br>
+    <?php echo $city; ?> Lucknow,
+    <br>
+    <?php echo $state; ?> Uttar Pradesh,
+    <br>
+    <?php echo $country; ?> India.
+</p>
+<!--End of Contact-->
+
+<!--Footer-->
+<footer class="container-fluid text-center">
+    <p>Copyright &copy; 2018 - All Rights Reserved - <a href="https://www.facebook.com/leoninja9906">Leoninja</a></p>
+</footer>
+<!--End of Footer-->
+<!--make sure to add the following to your html page-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--make this page a bit 3D-->
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+                // Store hash
+                var hash = this.hash;
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+        
+        $(window).scroll(function() {
+            $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+                
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+</body>
+</html>
